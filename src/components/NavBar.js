@@ -8,7 +8,7 @@ function NavBar() {
         <li className="NavItem"><Link className="NavLink" to="/">Books</Link></li>
         <li className="NavItem"><Link className="NavLink" to="/catagories">Catagories</Link></li>
       </ul>
-      <div><img src="src/assets/avatar.png" style={{ width: '30px', height: '30px' }} alt="Avatar" /></div>
+      <div><img src="../assets/avatar.png" style={{ width: '30px', height: '30px' }} alt="Avatar" /></div>
     </nav>
   );
 }

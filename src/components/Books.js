@@ -14,7 +14,7 @@ const bookList = [
     genre: 'Science Fiction',
     title: 'Dune',
     author: 'Frank Herbert',
-    chapter: 'Chapter 3:"A Lesson Learned',
+    chapter: 'Chapter 3:"A Lesson Learned"',
   },
   {
     id: '3',
