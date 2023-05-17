@@ -1,22 +1,54 @@
-// import { useDispatch } from 'react-redux';
-// import { addBook } from '../redux/books/bookSlice';
+import { useDispatch } from 'react-redux';
+import { useState } from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { v4 as uuidv4 } from 'uuid';
+import { addBook } from '../redux/books/bookSlice';
 
 function Form() {
-  // const dispatch = useDispatch();
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+  const dispatch = useDispatch();
+  const handlesubmit = (e) => {
+    e.preventDefault();
+    const Obj = {
+      id: uuidv4(),
+      title,
+      author,
+    };
+    dispatch(addBook(Obj));
+
+    setAuthor('');
+    setTitle('');
+  };
   return (
     <div>
-      <form className="newBookForm">
+      <form
+        className="newBookForm"
+      >
         <h2 className="title">ADD NEW BOOK</h2>
-        <input type="text" className="inputBook" placeholder="Book title" />
+        <input
+          type="text"
+          className="inputBook"
+          name="title"
+          value={title}
+          placeholder="Book title"
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <input
+          type="text"
+          className="inputBook"
+          name="author"
+          value={author}
+          placeholder="Book Author"
+          onChange={(e) => setAuthor(e.target.value)}
+        />
         <select className="Author" name="options">
           <option value="Author">Author</option>
         </select>
       </form>
       <button
         type="submit"
-        // onClick={() => {
-        //   dispatch(addBook());
-        // }}
+        onClick={handlesubmit}
       >
         ADD BOOK
       </button>
