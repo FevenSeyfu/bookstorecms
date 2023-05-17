@@ -3,13 +3,14 @@ import BookCard from './BookCard';
 import Form from './AddNewBook';
 
 function Books() {
-  const { books } = useSelector((state) => state.books);
+  const { booksList } = useSelector((state) => state.book);
   return (
     <section className="ListBooks">
-      {books.map((book) => (
+      {booksList.map((book) => (
         <BookCard
-          key={book.id}
-          genre={book.category}
+          key={book.item_id}
+          id={book.item_id}
+          category={book.category}
           title={book.title}
           author={book.author}
         />

@@ -1,8 +1,8 @@
-import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/bookSlice';
+// import { useDispatch } from 'react-redux';
+// import { addBook } from '../redux/books/bookSlice';
 
 function Form() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   return (
     <div>
       <form className="newBookForm">
@@ -14,9 +14,9 @@ function Form() {
       </form>
       <button
         type="submit"
-        onClick={() => {
-          dispatch(addBook());
-        }}
+        // onClick={() => {
+        //   dispatch(addBook());
+        // }}
       >
         ADD BOOK
       </button>

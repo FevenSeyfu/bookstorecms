@@ -1,11 +1,14 @@
-import { removeBook } from '../redux/books/bookSlice';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/bookSlice';
 
-const BookCard = ({ id, genre, title, author, }) => {
-	const dispatch = useDispatch();
+const BookCard = ({
+  id, category, title, author,
+}) => {
+  const dispatch = useDispatch();
   return (
     <div className="bookCard">
-      <h3 className="bookGenre">{genre}</h3>
+      <h3 className="bookGenre">{category}</h3>
       <h1 className="bookTitle">{title}</h1>
       <h2 className="bookAuthor">{author}</h2>
       <ul className="bookActions">
@@ -14,8 +17,8 @@ const BookCard = ({ id, genre, title, author, }) => {
           type="button"
           className="action"
           onClick={() => {
-				    dispatch(removeBook(id));
-				  }}
+            dispatch(removeBook(id));
+          }}
         >
           Remove
         </button>
@@ -29,5 +32,10 @@ const BookCard = ({ id, genre, title, author, }) => {
     </div>
   );
 };
-
+BookCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+};
 export default BookCard;
