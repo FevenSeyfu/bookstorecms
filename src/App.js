@@ -8,7 +8,10 @@ import NavBar from './components/NavBar';
 import { getBooksList } from './redux/books/bookSlice';
 
 function App() {
-	const dispatch =
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getBooksList());
+  }, [dispatch]);
   return (
     <BrowserRouter>
       <NavBar />
