@@ -1,12 +1,11 @@
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import BookCard from './BookCard';
 import Form from './AddNewBook';
 
 function Books() {
-  const { booksList } = useSelector((state) => state.book);
   return (
     <section className="ListBooks">
-      {booksList.map((book) => (
+      {/* {booksList.map((book) => (
         <BookCard
           key={book.item_id}
           id={book.item_id}
@@ -14,7 +13,8 @@ function Books() {
           title={book.title}
           author={book.author}
         />
-      ))}
+      ))} */}
+      <BookCard />
       <Form />
     </section>
   );
