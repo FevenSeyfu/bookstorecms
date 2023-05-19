@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/bookSlice';
+import { removeBook, getBooksList } from '../redux/books/bookSlice';
 
 const BookCard = ({
   id, category, title, author,
@@ -17,7 +17,7 @@ const BookCard = ({
           type="button"
           className="action"
           onClick={() => {
-            dispatch(removeBook(id));
+            dispatch(removeBook(id)).then(() => dispatch(getBooksList));
           }}
         >
           Remove
