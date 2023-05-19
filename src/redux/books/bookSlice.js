@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const BooksApiURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/Id8BnsXjGP3gDOBoRJH2B';
+const BooksApiURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/4Bkp6loYG9mGZPxrCohB';
 
 export const addBook = createAsyncThunk('books/addBook', async (book) => {
   try {
@@ -12,13 +12,13 @@ export const addBook = createAsyncThunk('books/addBook', async (book) => {
   return book;
 });
 
-export const removeBook = createAsyncThunk('books/removeBook', async (bookID) => {
+export const removeBook = createAsyncThunk('books/removeBook', async (bookId) => {
   try {
-    await axios.delete(`${BooksApiURL}/books/${bookID}`);
+    await axios.delete(`${BooksApiURL}/books/${bookId}`);
   } catch (e) {
     throw new Error(e);
   }
-  return bookID;
+  return bookId;
 });
 
 export const getBooks = createAsyncThunk('books/getBooks', async () => {
