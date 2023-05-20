@@ -251,7 +251,8 @@ body {
 /* style add book */
 
 .newBookForm {
-  border-top: solid 1px var(--white);
+  border-top: solid 2px lightgray;
+  margin-top: 2rem;
 }
 
 .title {
