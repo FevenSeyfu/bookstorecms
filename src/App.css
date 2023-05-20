@@ -4,6 +4,7 @@
   --azure: #0290ff;
   --white: #e8e8e8;
   --medium-blue: #307bbe;
+  --pale-grey: #f5f6fa;
 }
 
 body {
@@ -19,10 +20,11 @@ body {
   width: 87.5rem;
   height: 5.938rem;
   margin: 0 0 2.375rem;
-  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  padding: 1.438rem 6.188rem 0 6.25rem;
   background-color: #fff;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .main-header {
@@ -71,6 +73,11 @@ body {
 
 /* Style bookcard */
 
+.ListBooks {
+  padding: 2rem 5rem;
+  background-color: var(--pale-grey);
+}
+
 .bookCard {
   display: flex;
   background-color: #fff;
@@ -80,6 +87,7 @@ body {
   border-radius: 4px;
   gap: 1rem;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .bookGenre {
@@ -244,7 +252,6 @@ body {
 
 .newBookForm {
   border-top: solid 1px var(--white);
-  margin-left: 12rem;
 }
 
 .title {
