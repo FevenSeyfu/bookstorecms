@@ -46,8 +46,8 @@ const BookCard = () => {
           </div>
         </div>
         <div className="progress">
-          <p className="current">CURRENT CHAPTER</p>
-          <h3 className="chapterNumb">chapter</h3>
+          <h3 className="current">CURRENT CHAPTER</h3>
+          <p className="chapterNumb">Chapter 17</p>
           <button type="submit" className="updateProgresBtn">UPDATE PROGRESS</button>
         </div>
       </div>
