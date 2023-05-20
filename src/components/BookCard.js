@@ -20,7 +20,7 @@ const BookCard = () => {
   return (
     books.map((book) => (
       <div key={book.item_id} className="bookCard">
-        <div>
+        <div className="book">
           <h3 className="bookGenre">{book.category}</h3>
           <h1 className="bookTitle">{book.title}</h1>
           <h2 className="bookAuthor">{book.author}</h2>
@@ -39,7 +39,7 @@ const BookCard = () => {
           </ul>
         </div>
         <div className="progress-chart">
-          <div className="progress-bar"> </div>
+          <div className="progress-bar" />
           <div className="progress-percentage">
             <p className="percent">64%</p>
             <p className="complete">completed</p>
