@@ -33,29 +33,35 @@ function Form() {
         className="newBookForm"
       >
         <h2 className="title">ADD NEW BOOK</h2>
-        <input
-          type="text"
-          className="inputBook"
-          name="title"
-          value={values.title || ''}
-          placeholder="Book title"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inputBook"
-          name="author"
-          value={values.author || ''}
-          placeholder="Book Author"
-          onChange={handleChange}
-        />
+        <div className="input">
+          <input
+            type="text"
+            className="inputBook"
+            name="title"
+            value={values.title || ''}
+            placeholder="Book title"
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            className="inputBook"
+            name="author"
+            value={values.author || ''}
+            placeholder="Book Author"
+            onChange={handleChange}
+          />
+          <select name="Catagories" id="Catagories" className="drop-down">
+            <option value="actipn">Catagories</option>
+          </select>
+          <button
+            type="submit"
+            onClick={handlesubmit}
+            className="AddBook"
+          >
+            ADD BOOK
+          </button>
+        </div>
       </form>
-      <button
-        type="submit"
-        onClick={handlesubmit}
-      >
-        ADD BOOK
-      </button>
     </div>
   );
 }

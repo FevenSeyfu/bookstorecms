@@ -3,6 +3,7 @@ import Books from './components/Books';
 import Catagories from './components/Catagories';
 import NotFound from './components/NotFound';
 import NavBar from './components/NavBar';
+import './App.css';
 
 function App() {
   return (
