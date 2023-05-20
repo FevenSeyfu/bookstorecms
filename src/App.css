@@ -232,3 +232,47 @@ body {
   font-weight: 400;
   color: var(--white);
 }
+
+/* style add book */
+
+.newBookForm {
+  border-top: solid 1px var(--white);
+  margin-left: 12rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.drop-down,
+input {
+  width: 20.5rem;
+  height: 2.813rem;
+  border-radius: 4px;
+  margin: 2rem;
+  border: solid 1px var(--white);
+  background-color: #fff;
+  font-size: 1.3rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+}
+
+.AddBook {
+  width: 11.5rem;
+  height: 2.813rem;
+  margin: 2rem;
+  border-radius: 3px;
+  background-color: var(--azure);
+  color: var(--white);
+  font-size: 1rem;
+  border: #0290ff;
+}
