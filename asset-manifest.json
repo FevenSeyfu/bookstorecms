@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/FevenSeyfu/bookstorecms.git/static/css/main.8666d51b.css",
-    "main.js": "/FevenSeyfu/bookstorecms.git/static/js/main.9d9b72f9.js",
+    "main.js": "/FevenSeyfu/bookstorecms.git/static/js/main.f835a88e.js",
     "index.html": "/FevenSeyfu/bookstorecms.git/index.html",
     "main.8666d51b.css.map": "/FevenSeyfu/bookstorecms.git/static/css/main.8666d51b.css.map",
-    "main.9d9b72f9.js.map": "/FevenSeyfu/bookstorecms.git/static/js/main.9d9b72f9.js.map"
+    "main.f835a88e.js.map": "/FevenSeyfu/bookstorecms.git/static/js/main.f835a88e.js.map"
   },
   "entrypoints": [
     "static/css/main.8666d51b.css",
-    "static/js/main.9d9b72f9.js"
+    "static/js/main.f835a88e.js"
   ]
 }
