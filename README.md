@@ -30,8 +30,8 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-
-# 📖 Math Magician <a name="about-project"></a>
+js
+# 📖 Book Store <a name="about-project"></a>
 
 
 **Book store** is a book store App that lets you add, remove and display a list of books.
