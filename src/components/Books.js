@@ -1,5 +1,5 @@
-import BookCard from './BookCard.js';
-import Form from './AddNewBook.js';
+import BookCard from './BookCard';
+import Form from './AddNewBook';
 
 function Books() {
   return (

@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { addBook } from '../redux/books/bookSlice.js';
+import { addBook } from '../redux/books/bookSlice';
 
 const bookTemplate = {
   item_id: '',
