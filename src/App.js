@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Books from './components/Books';
 import Catagories from './components/Catagories';
 import NotFound from './components/NotFound';
@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <NavBar />
       <Routes>
         <Route path="/">
@@ -16,7 +16,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 

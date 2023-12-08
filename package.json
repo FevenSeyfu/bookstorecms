@@ -2,7 +2,7 @@
   "name": "bookstorecms",
   "version": "0.1.0",
   "private": true,
-	"homepage": "https://github.com/FevenSeyfu/bookstorecms.git",
+  "homepage": "https://github.com/FevenSeyfu/bookstorecms.git",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-		"predeploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
