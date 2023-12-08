@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeBook, getBooks } from '../redux/books/bookSlice';
+import { removeBook, getBooks } from '../redux/books/bookSlice.js';
 
 const BookCard = () => {
   const { books, isLoading, isError } = useSelector((state) => state.books);
